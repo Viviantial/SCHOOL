@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <script src ="IMS.js"></script>
+    <title>Inventory Management</title>
+</head>
+<body>
+    
+    <h1>Inventory Management</h1>
+    <form id="Inventory">
+        <input type="number" id="ID" placeholder="ID">
+        <input type="text" id="itemName" placeholder="Item Name" >
+        <input type="number" id="itemQuantity" placeholder="Quantity" >
+        <input type="number" id="itemPrice" placeholder="Price" >
+        <button type="submit">ADD</button>
+    </form>
+    <h2>Inventory</h2>
+
+    <table id="inventoryTable">
+        
+        <thead>
+            <tr>
+                <thead>
+                    <tbody id ="Inventory"></tbody>
+                </thead>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    
+    </table>
+<tbody>
+
+    </tbody>
+    <table>
+        <title for="searchId"> Search by ID:</title>
+        <input type = "number" id = "searchId" placeholder = "Enter ID:">
+        <button onclick = "searchItemById()">SEARCH</button>
+    </table>
+
+        <button onclick = "SortByPrice()">Sort By Price</button>
+        <button onclick = "SortByQuantity()">Sort by Quantity</button>
+        <button onclick = "SortByID()">Sort by ID</button>
+
+        <script src = "bubble_sort.js"></script>
+        <script src = "merge_sort.js"></script>
+        <script src = "quick_sort.js"></script>
+        <script src = "linear_search.js"></script>
+        <script src = "binary_search.js"></script>
+        
+    
+    </body>
+    </html>
